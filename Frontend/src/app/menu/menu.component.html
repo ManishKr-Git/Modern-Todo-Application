@@ -1,0 +1,22 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div>
+      <a routerLink="/welcome/{{this.basicAuthService.getAuthenticatedUser()}}" class="navbar-brand"
+        *ngIf='this.basicAuthService.getAuthenticatedUser()'><img src="assets/images/logo.png" alt="" id="logo"></a>
+      <a routerLink="/welcome/#" class="navbar-brand" *ngIf='!this.basicAuthService.getAuthenticatedUser()'><img
+          src="assets/images/logo.png" alt="" id="logo"></a>
+    </div>
+    <ul class="navbar-nav">
+      <li><a routerLink="/welcome/{{this.basicAuthService.getAuthenticatedUser()}}" class="nav-link"
+          *ngIf='this.basicAuthService.getAuthenticatedUser()'>Home</a></li>
+      <li><a routerLink="/todos" class="nav-link" *ngIf='this.basicAuthService.getAuthenticatedUser()'>Todos</a></li>
+    </ul>
+    <ul class="navbar-nav navbar-collapse justify-content-end">
+      <li class="nav-link" *ngIf='this.basicAuthService.getAuthenticatedUser()'> Welcome <span
+          id="username">{{this.basicAuthService.getAuthenticatedUser()}}</span>
+      </li>
+      <li><a routerLink="/login" class="nav-link" *ngIf='!this.basicAuthService.getAuthenticatedUser()'>Login</a></li>
+      <li><a routerLink="/logout" class="nav-link" *ngIf='this.basicAuthService.getAuthenticatedUser()'>Logout</a></li>
+    </ul>
+  </nav>
+</header>

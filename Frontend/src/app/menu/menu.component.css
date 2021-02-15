@@ -1,0 +1,9 @@
+#username {
+  text-transform: uppercase;
+}
+#logo {
+  height: 40px;
+  width: 60px;
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,14 @@
+insert into todo(id, username,description,target_date,is_done) 
+values(1,'in28minutes','Learn Java Angular',sysdate(),false);
+
+insert into todo(id, username,description,target_date,is_done) 
+values(2,'in28minutes','Learn Java ',sysdate(),false);
+
+insert into todo(id, username,description,target_date,is_done) 
+values(3,'in28minutes','Learn Data Structure',sysdate(),false);
+
+insert into todo(id, username,description,target_date,is_done) 
+values(4,'in28minutes','Learn JPA',sysdate(),false);
+
+insert into todo(id, username,description,target_date,is_done) 
+values(5,'in28minutes','Learn JDBC',sysdate(),false);
